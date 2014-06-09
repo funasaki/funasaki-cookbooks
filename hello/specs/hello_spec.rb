@@ -1,6 +1,6 @@
 require 'minitest/spec'
 
-describe_recipe 'mysql::config' do
+describe_recipe 'hello::default' do
   include MiniTest::Chef::Resources
   include MiniTest::Chef::Assertions
 
