@@ -14,3 +14,4 @@ describe_recipe 'hello::default' do
         :owner, 'root').and(:group, 'root')
     end
   end
+end

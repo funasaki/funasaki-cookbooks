@@ -1,0 +1,70 @@
+I, [2014-07-23T13:36:15.784714 #20470]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-07-23T13:36:15.789025 #20470] ERROR -- Kitchen: ------Exception-------
+E, [2014-07-23T13:36:15.789067 #20470] ERROR -- Kitchen: Class: Kitchen::ClientError
+E, [2014-07-23T13:36:15.789094 #20470] ERROR -- Kitchen: Message: Could not load the 'vagrant' driver from the load path. Please ensure that your driver is installed as a gem or included in your Gemfile if using Bundler.
+E, [2014-07-23T13:36:15.789117 #20470] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-07-23T13:36:15.789140 #20470] ERROR -- Kitchen: Class: LoadError
+E, [2014-07-23T13:36:15.789171 #20470] ERROR -- Kitchen: Message: cannot load such file -- kitchen/driver/vagrant
+E, [2014-07-23T13:36:15.789196 #20470] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-07-23T13:36:15.789219 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:50:in `rescue in for_plugin'
+E, [2014-07-23T13:36:15.789241 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:40:in `for_plugin'
+E, [2014-07-23T13:36:15.789263 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:124:in `new_driver'
+E, [2014-07-23T13:36:15.789285 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:130:in `new_instance'
+E, [2014-07-23T13:36:15.789307 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-07-23T13:36:15.789330 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-07-23T13:36:15.789352 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-07-23T13:36:15.789374 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-07-23T13:36:15.789399 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-07-23T13:36:15.789422 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-07-23T13:36:15.789444 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-07-23T13:36:15.789481 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-07-23T13:36:15.789503 #20470] ERROR -- Kitchen: /usr/share/ruby/2.0/benchmark.rb:281:in `measure'
+E, [2014-07-23T13:36:15.789525 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-07-23T13:36:15.789548 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-07-23T13:36:15.789569 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-07-23T13:36:15.789592 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-07-23T13:36:15.789618 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-07-23T13:36:15.789641 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-07-23T13:36:15.789663 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-07-23T13:36:15.789685 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-07-23T13:36:15.789707 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-07-23T13:36:15.789736 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-07-23T13:36:15.789761 #20470] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-07-23T13:36:15.789783 #20470] ERROR -- Kitchen: /home/ec2-user/bin/kitchen:23:in `load'
+E, [2014-07-23T13:36:15.789808 #20470] ERROR -- Kitchen: /home/ec2-user/bin/kitchen:23:in `<main>'
+E, [2014-07-23T13:36:15.789831 #20470] ERROR -- Kitchen: ----------------------
+I, [2014-07-23T13:37:07.972508 #20479]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-07-23T13:37:07.976691 #20479] ERROR -- Kitchen: ------Exception-------
+E, [2014-07-23T13:37:07.976733 #20479] ERROR -- Kitchen: Class: Kitchen::ClientError
+E, [2014-07-23T13:37:07.976761 #20479] ERROR -- Kitchen: Message: Could not load the 'vagrant' driver from the load path. Please ensure that your driver is installed as a gem or included in your Gemfile if using Bundler.
+E, [2014-07-23T13:37:07.976786 #20479] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-07-23T13:37:07.976809 #20479] ERROR -- Kitchen: Class: LoadError
+E, [2014-07-23T13:37:07.976833 #20479] ERROR -- Kitchen: Message: cannot load such file -- kitchen/driver/vagrant
+E, [2014-07-23T13:37:07.976856 #20479] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-07-23T13:37:07.976882 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:50:in `rescue in for_plugin'
+E, [2014-07-23T13:37:07.976907 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:40:in `for_plugin'
+E, [2014-07-23T13:37:07.976930 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:124:in `new_driver'
+E, [2014-07-23T13:37:07.976968 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:130:in `new_instance'
+E, [2014-07-23T13:37:07.976991 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-07-23T13:37:07.977013 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-07-23T13:37:07.977036 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-07-23T13:37:07.977059 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-07-23T13:37:07.977084 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-07-23T13:37:07.977107 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-07-23T13:37:07.977130 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-07-23T13:37:07.977153 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-07-23T13:37:07.977175 #20479] ERROR -- Kitchen: /usr/share/ruby/2.0/benchmark.rb:281:in `measure'
+E, [2014-07-23T13:37:07.977198 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-07-23T13:37:07.977220 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-07-23T13:37:07.977242 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-07-23T13:37:07.977265 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-07-23T13:37:07.977290 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-07-23T13:37:07.977323 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-07-23T13:37:07.977347 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-07-23T13:37:07.977369 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-07-23T13:37:07.977391 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-07-23T13:37:07.977413 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-07-23T13:37:07.977435 #20479] ERROR -- Kitchen: /home/ec2-user/.gem/ruby/2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-07-23T13:37:07.977456 #20479] ERROR -- Kitchen: /home/ec2-user/bin/kitchen:23:in `load'
+E, [2014-07-23T13:37:07.977478 #20479] ERROR -- Kitchen: /home/ec2-user/bin/kitchen:23:in `<main>'
+E, [2014-07-23T13:37:07.977503 #20479] ERROR -- Kitchen: ----------------------
