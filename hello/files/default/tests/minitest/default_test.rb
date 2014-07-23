@@ -1,7 +1,7 @@
 require 'minitest/spec'
-describe_recipe 'hello::default' do
-    it 'create hello.txt' do
-        file('/home/ec2-user/hello4.txt').must_exist
-    end
-end
 
+class TestApache2 < MiniTest::Chef::TestCase
+  def test_that_the_service_is_enabled
+    assert File.exists?("/home/ec2-user/hello4.txt")
+  end
+end
