@@ -1,2 +1,2 @@
-site: opscode
+site :opscode
 cookbook 'mysql'
