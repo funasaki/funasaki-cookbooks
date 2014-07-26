@@ -1,3 +1,3 @@
-file "/home/ec2-user/hello5.txt" do
+file "/home/ec2-user/hello.txt" do
    action :create
 end
