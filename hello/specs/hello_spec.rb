@@ -1,16 +1,7 @@
-require 'minitest/spec'
-
-describe_recipe 'hello::default' do
-  include MiniTest::Chef::Resources
-  include MiniTest::Chef::Assertions
-
-  it 'installs config file' do
-    case node[:platform]
-    when 'debian','ubuntu'
-      file('/home/ec2-user/hello3.txt').must_exist.with(:mode, '644').and(
-        :owner, 'root').and(:group, 'root')
-    when 'centos','redhat','fedora','amazon'
-      file('/home/ec2-user/hello3.txt').must_exist.with(:mode, '644').and(
-        :owner, 'root').and(:group, 'root')
-    end
+class NginxSpec < MiniTest::Chef::Spec
+  describe 'configuration' do
+    it 'creates nginx.conf' do
+      file("/etc/fstab").must_have(:mode, "644")
+      assert File.exist?('/etc/nginx.conf')
   end
+end
