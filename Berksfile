@@ -1,3 +1,2 @@
 site: opscode
-
-cookbook 'ark', git: 'git://github.com/opscode-cookbooks/ark.git'
+cookbook 'mysql'
