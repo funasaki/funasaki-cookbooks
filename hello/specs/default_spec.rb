@@ -4,12 +4,8 @@ describe_recipe 'hello::default' do
   include MiniTest::Chef::Resources
   include MiniTest::Chef::Assertions
 
-  it 'uninstalls ruby-enterprise' do
-    package('ruby-enterprise').wont_be_installed
-  end
-
-  it 'installs ruby' do
-    file('/usr/local/bin/ruby').must_exist
+  it 'create hello6.txt' do
+    file('/home/ec2-user/hello6.txt').must_exist
   end
 
   it 'must be the right version' do
